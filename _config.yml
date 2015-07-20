@@ -1,12 +1,26 @@
 # Site settings
 title: Omega Alumini Association
-email: admin@omegacollege.edu.np
+
 description: "This site provides a basic information about Omega Alumini Association their aims and activities."
 baseurl: ""
 url: "http://alumini.omegacollege.edu.np"
-twitter_username: frensOfAll
-github_username:  shubhajeet
+
+org:
+  twitter: frensOfAll
+  github:  shubhajeet
+  facebook:
+  email: admin@omegacollege.edu.np
+  address:
+    lat:
+    long:
+    place: Kumaripati
 
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+collections:
+  events:
+    output: true
+    premalink: /events/:path/
+    layout: notice
