@@ -1,0 +1,8 @@
+<div class="jumbotorn container">
+    <h1>
+    {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
+    </h1>
+    <p>
+        {% if page.title %}{{ page.description }}{% else %}{{ site.description }}{% endif %}
+    </p>
+</div>

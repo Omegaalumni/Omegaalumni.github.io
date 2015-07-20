@@ -1,18 +1,14 @@
-<footer class="site-footer"></footer>
-
-<div class="wrap">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-1 column">
-        <ul>
-            <li>{{ site.title }}</li>
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-    </div>
-
-    <div class="footer-col-2 column">
-        <ul>
+<footer class="container">
+    <section class="col-sm-4">
+        <h1>Contacts</h1>
+    </section>
+    <section class="col-sm-4">
+        <h1>links</h1>
+    </section>
+    <section class="col-sm-4">
+        <h1>Developers Information</h1>
+        <uL class="list-unstyled">
+        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {% if site.github_username %}<li>
             <a href="https://github.com/{{ site.github_username }}">
                 <span class="icon github">
@@ -50,10 +46,5 @@
                 </a>
             </li>{% endif %}
         </ul>
-    </div>
-
-    <div class="footer-col-3 column">
-        <p class="text">{{ site.description }}</p>
-    </div>
-
+        </section>
 </div>
