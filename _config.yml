@@ -7,7 +7,6 @@ url: "http://alumini.omegacollege.edu.np"
 
 org:
   twitter: frensOfAll
-  github:  shubhajeet
   facebook:
   email: admin@omegacollege.edu.np
   address:
@@ -24,3 +23,10 @@ collections:
     output: true
     premalink: /events/:path/
     layout: notice
+  links:
+    output:true
+    layout:page
+
+# Paginate
+paginate: 5
+paginate_path: 'Notice/page:num/'

@@ -1,17 +1,39 @@
 <footer class="container">
     <section class="col-sm-4">
         <h1>Contacts</h1>
+        <dl class="dl-horizontal">
+            <dt>Name</dt>
+            <dd>{{site.title}}</dd>
+            <dt>Mail</dt>
+            <dd><a href="mailto:{{site.org.email}}">{{site.org.email}}</a></dd>
+            <dt>Address</dt>
+            <dd>{{site.org.address.place}}</dd>
+        </dl>
     </section>
     <section class="col-sm-4">
         <h1>links</h1>
+        {% assign links=site.data.link %%}
+        <ul class="list-unstyled">
+            {% for link in links %}
+            <li><a href="{{link.url}}">{{link.name}}</a></li>
+         {%endfor%}
+        </ul>
     </section>
     <section class="col-sm-4">
+        {% assign developer=site.data.developer %}
         <h1>Developed By:</h1>
-        <uL class="list-unstyled">
-            <li class="mail"><a href="mailto:{{ site.developer.email }}">{{ site.email }}</a></li>
-            {% assign developer=site.data.developer %}
-            {% if developer.github %}<li>
-            <a href="https://github.com/{{ site.github_username }}">
+        <dl class="dl-horizontal">
+            <dt>Name</dt>
+            <dd>{{developer.name.first}} {{developer.name.last}}</dd>
+            <dt>Website</dt>
+            <dd><a href="{{developer.website}}">{{developer.website}}</a></dd>
+            <dt>Mail</dt>
+            <dd><a href="mailto:{{ developer.mail }}">{{ developer.mail }}</a></dd>
+
+            {% if developer.github %}
+            <dt>Github</dt>
+            <dd>
+            <a href="https://github.com/{{ developer.github }}">
                 <span class="icon github">
                     <svg version="1.1" class="github-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
@@ -26,11 +48,13 @@
                                                                                         c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
                     </svg>
                 </span>
-                <span class="username">{{ site.github }}</span>
+                <span class="username">{{ developer.github }}</span>
             </a>
-            </li>{% endif %}
-            {% if developer.twitter %}<li>
-                <a href="https://twitter.com/{{ site.twitter }}">
+            </dt>
+            {% endif %}
+            {% if developer.twitter %}<dt>Twitter</dt>
+            <dd>
+                <a href="https://twitter.com/{{ developer.twitter }}">
                     <span class="icon twitter">
                         <svg version="1.1" class="twitter-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
@@ -45,7 +69,7 @@
                     </span>
                     <span class="username">{{ developer.twitter }}</span>
                 </a>
-            </li>{% endif %}
+            </dd>{% endif %}
         </ul>
         </section>
 </div>d
