@@ -1,6 +1,6 @@
-<footer class="container">
-    <section class="col-sm-4">
-        <h1>Contacts</h1>
+<footer class="footer navbar-default">
+    <section class="col-md-4">
+        <h2>Contacts</h2>
         <dl class="dl-horizontal">
             <dt>Name</dt>
             <dd>{{site.title}}</dd>
@@ -10,7 +10,7 @@
             <dd>{{site.org.address.place}}</dd>
         </dl>
     </section>
-    <section class="col-sm-4">
+    <section class="col-md-4">
         <h1>links</h1>
         {% assign links=site.data.link %%}
         <ul class="list-unstyled">
@@ -19,21 +19,20 @@
          {%endfor%}
         </ul>
     </section>
-    <section class="col-sm-4">
+    <section class="col-md-4" itemscope="http://schema.org/Person">
         {% assign developer=site.data.developer %}
         <h1>Developed By:</h1>
         <dl class="dl-horizontal">
             <dt>Name</dt>
-            <dd>{{developer.name.first}} {{developer.name.last}}</dd>
+            <dd><span itemprop="first">{{developer.name.first}} </span><span itemprop="familyName">{{developer.name.last}}</span></dd>
             <dt>Website</dt>
-            <dd><a href="{{developer.website}}">{{developer.website}}</a></dd>
+            <dd><a href="{{developer.website}}" itemprop="url">{{developer.website}}</a></dd>
             <dt>Mail</dt>
-            <dd><a href="mailto:{{ developer.mail }}">{{ developer.mail }}</a></dd>
-
+            <dd><a href="mailto:{{ developer.mail }}" itemprop="email">{{ developer.mail }}</a></dd>
             {% if developer.github %}
             <dt>Github</dt>
             <dd>
-            <a href="https://github.com/{{ developer.github }}">
+            <a href="https://github.com/{{ developer.github }}" itemprop="url">
                 <span class="icon github">
                     <svg version="1.1" class="github-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
@@ -50,11 +49,11 @@
                 </span>
                 <span class="username">{{ developer.github }}</span>
             </a>
-            </dt>
+            </dd>
             {% endif %}
             {% if developer.twitter %}<dt>Twitter</dt>
             <dd>
-                <a href="https://twitter.com/{{ developer.twitter }}">
+                <a href="https://twitter.com/{{ developer.twitter }}" itemprop="url">
                     <span class="icon twitter">
                         <svg version="1.1" class="twitter-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
@@ -69,7 +68,8 @@
                     </span>
                     <span class="username">{{ developer.twitter }}</span>
                 </a>
-            </dd>{% endif %}
-        </ul>
+            </dd>
+            {% endif %}
+        </dl>
         </section>
-</div>d
+</div>

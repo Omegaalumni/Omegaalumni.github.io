@@ -3,10 +3,10 @@
   <channel>
     <title>Omega Alumini Association</title>
     <description>This site provides a basic information about Omega Alumini Association their aims and activities.</description>
-    <link>http://alumini.omegacollege.edu.np/</link>
-    <atom:link href="http://alumini.omegacollege.edu.np/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 21 Jul 2015 08:27:28 +0545</pubDate>
-    <lastBuildDate>Tue, 21 Jul 2015 08:27:28 +0545</lastBuildDate>
+    <link>http://alumini.omegacollege.edu.np/alumini/</link>
+    <atom:link href="http://alumini.omegacollege.edu.np/alumini/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 23 Jul 2015 07:39:41 +0545</pubDate>
+    <lastBuildDate>Thu, 23 Jul 2015 07:39:41 +0545</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -26,8 +26,8 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
 
 </description>
         <pubDate>Tue, 21 Jul 2015 00:11:57 +0545</pubDate>
-        <link>http://alumini.omegacollege.edu.np/jekyll/update/2015/07/21/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://alumini.omegacollege.edu.np/jekyll/update/2015/07/21/welcome-to-jekyll/</guid>
+        <link>http://alumini.omegacollege.edu.np/alumini/jekyll/update/2015/07/21/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">http://alumini.omegacollege.edu.np/alumini/jekyll/update/2015/07/21/welcome-to-jekyll/</guid>
         
         
         <category>jekyll</category>

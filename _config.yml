@@ -2,7 +2,7 @@
 title: Omega Alumini Association
 
 description: "This site provides a basic information about Omega Alumini Association their aims and activities."
-baseurl: ""
+baseurl: "/alumini"
 url: "http://alumini.omegacollege.edu.np"
 
 org:
@@ -24,8 +24,8 @@ collections:
     premalink: /events/:path/
     layout: notice
   links:
-    output:true
-    layout:page
+    output: true
+    pemalink: /:path/
 
 # Paginate
 paginate: 5

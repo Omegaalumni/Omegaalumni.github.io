@@ -7,10 +7,10 @@
     </title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="This site provides a basic information about Omega Alumini Association their aims and activities.">
-    <link rel="canonical" href="http://alumini.omegacollege.edu.np/">
+    <link rel="canonical" href="http://alumini.omegacollege.edu.np/alumini/">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href=/css/bootstrap.css>
+    <link rel="stylesheet" href=/alumini/css/bootstrap.css>
     <style>
      body { padding-top: 70px;}
     </style>
@@ -21,7 +21,7 @@
     <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
-            <img alt="Omega Alumini Association" src="">
+            <img alt="Omega Alumini Association" src="/alumini">
         </div>
         <button type="button" class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#links" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
@@ -31,14 +31,18 @@
         </button>
         <div class="collapse navbar-collapse navbar-right" id="links">
             <ul class="nav navbar-nav">
-                <li><a href="/">Home</a></li>
+                <li><a href="/alumini/">Home</a></li>
+                
+                <li><a href="/alumini/about/">About</a></li>
+                
+                <li><a href="/alumini/links/members.html">executive committe</a></li>
                 
                 <li class="divider" role="separator"></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Notices <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                     
-                        <li><a href="/jekyll/update/2015/07/21/welcome-to-jekyll/">Welcome to Jekyll!</a></li>
+                        <li><a href="/alumini/jekyll/update/2015/07/21/welcome-to-jekyll/">Welcome to Jekyll!</a></li>
                     
                     </ul>
                 </li>
@@ -47,12 +51,12 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                     
-                        <li><a href="/events/counceling.html">Event title</a></li>
+                        <li><a href="/alumini/events/counceling.html">Event title</a></li>
                     
                     </ul>
                 </li>
                 <li class="divider" role="separator"></li>
-                <li><a href="/feed.xml">
+                <li><a href="/alumini/feed.xml">
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" version="1.1" width="128px" height="128px" id="RSSicon" viewBox="0 0 256 256">
                         <defs>
                             <linearGradient x1="0.085" y1="0.085" x2="0.915" y2="0.915" id="RSSg">
@@ -97,19 +101,19 @@
     
       <li>
         <span class="post-date">Jul 21, 2015</span>
-        <a class="post-link" href="/jekyll/update/2015/07/21/welcome-to-jekyll/">Welcome to Jekyll!</a>
+        <a class="post-link" href="/alumini/jekyll/update/2015/07/21/welcome-to-jekyll/">Welcome to Jekyll!</a>
       </li>
     
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+  <p class="rss-subscribe">subscribe <a href="/alumini/feed.xml">via RSS</a></p>
 
 </section>
 
-    </div>
-    <footer class="container">
-    <section class="col-sm-4">
-        <h1>Contacts</h1>
+    </section>
+    <footer class="footer navbar-default">
+    <section class="col-md-4">
+        <h2>Contacts</h2>
         <dl class="dl-horizontal">
             <dt>Name</dt>
             <dd>Omega Alumini Association</dd>
@@ -119,7 +123,7 @@
             <dd>Kumaripati</dd>
         </dl>
     </section>
-    <section class="col-sm-4">
+    <section class="col-md-4">
         <h1>links</h1>
         
         <ul class="list-unstyled">
@@ -130,21 +134,20 @@
          
         </ul>
     </section>
-    <section class="col-sm-4">
+    <section class="col-md-4" itemscope="http://schema.org/Person">
         
         <h1>Developed By:</h1>
         <dl class="dl-horizontal">
             <dt>Name</dt>
-            <dd>Sujit Maharjan</dd>
+            <dd><span itemprop="first">Sujit </span><span itemprop="familyName">Maharjan</span></dd>
             <dt>Website</dt>
-            <dd><a href="maharjansujit.com.np">maharjansujit.com.np</a></dd>
+            <dd><a href="maharjansujit.com.np" itemprop="url">maharjansujit.com.np</a></dd>
             <dt>Mail</dt>
-            <dd><a href="mailto:mail@maharjansujit.com.np">mail@maharjansujit.com.np</a></dd>
-
+            <dd><a href="mailto:mail@maharjansujit.com.np" itemprop="email">mail@maharjansujit.com.np</a></dd>
             
             <dt>Github</dt>
             <dd>
-            <a href="https://github.com/shubhajeet">
+            <a href="https://github.com/shubhajeet" itemprop="url">
                 <span class="icon github">
                     <svg version="1.1" class="github-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
@@ -161,11 +164,11 @@
                 </span>
                 <span class="username">shubhajeet</span>
             </a>
-            </dt>
+            </dd>
             
             <dt>Twitter</dt>
             <dd>
-                <a href="https://twitter.com/frensOfAll">
+                <a href="https://twitter.com/frensOfAll" itemprop="url">
                     <span class="icon twitter">
                         <svg version="1.1" class="twitter-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
@@ -181,11 +184,12 @@
                     <span class="username">frensOfAll</span>
                 </a>
             </dd>
-        </ul>
+            
+        </dl>
         </section>
-</div>d
+</div>
 
     </body>
-    <script src="/js/jquery-2.1.4.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="/alumini/js/jquery-2.1.4.min.js"></script>
+    <script src="/alumini/js/bootstrap.min.js"></script>
 </html>
