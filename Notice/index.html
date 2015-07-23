@@ -1,0 +1,50 @@
+---
+layout: default
+title: Notices
+---
+<table>
+  <tr>
+    <th>
+      <h1>Posts</h1>
+    </th>
+  </tr>
+  {% for post in paginator.posts %}
+  <tr>
+    <th>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    </th>
+  </tr>
+  <tr>
+    <td>
+    {{ post.excerpt }}
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+
+<!-- Pagination links -->
+<div class="box paginator">
+  <ul>
+  {% if paginator.previous_page %}
+  <li>
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  </li>
+ {% else %}
+  <li>
+    <span class="previous">No Previous</span>
+  </li>
+  {% endif %}
+  <li width="80%">
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  </li>
+  {% if paginator.next_page %}
+  <li width="20%">
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  </li>
+  {% else %}
+  <li width="20%">
+    <span class="next ">No Next page</span>
+  </li>
+  {% endif %}
+  </ul>
+</div>
