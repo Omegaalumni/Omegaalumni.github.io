@@ -6589,3 +6589,6 @@ button.close {
   position: relative;
   top: 3px;
 }
+.footer {
+  margin-bottom: 0px;
+}

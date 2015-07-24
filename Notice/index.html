@@ -2,49 +2,62 @@
 layout: default
 title: Notices
 ---
-<table>
-  <tr>
-    <th>
-      <h1>Notices</h1>
-    </th>
-  </tr>
+<section>
+    <h1>Notices</h1>
   {% for post in paginator.posts %}
-  <tr>
-    <th>
+  <section class="panel panel-default">
+    <div class="panel-heading">
     <a href="{{ post.url }}">{{ post.title }}</a>
-    </th>
-  </tr>
-  <tr>
-    <td>
-    {{ post.excerpt }}
-    </td>
-  </tr>
+    </div>
+    <div class="panel-body">
+        {{ post.excerpt }}
+    </div>
+  </section>
   {% endfor %}
-</table>
+</section>
 
 <!-- Pagination links -->
-<div class="box paginator">
-  <ul>
-  {% if paginator.previous_page %}
-  <li>
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-  </li>
- {% else %}
-  <li>
-    <span class="previous">No Previous</span>
-  </li>
-  {% endif %}
-  <li width="80%">
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  </li>
-  {% if paginator.next_page %}
-  <li width="20%">
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  </li>
-  {% else %}
-  <li width="20%">
-    <span class="next ">No Next page</span>
-  </li>
-  {% endif %}
+<nav>
+  <ul class="pagination">
+
+      {% if paginator.previous_page %}
+      <li>
+          <a href="{{ paginator.previous_page_path }}" aria-label="previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+        {% else %}
+        <li class="disabled">
+        <a href="{{ paginator.previous_page_path }}" aria-label="previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+        {% endif %}
+      </li>
+      {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+      <li class="active">
+          {% else %}
+          <li>
+      {% endif %}
+
+      {% if page == 1 %}
+          <a href="{{ site.paginate_path | replace: 'page:num/', 'index.html'}}" >{{ page }}</a>
+          {% else %}
+          <a href="{{ site.paginate_path | replace: ':num', page }}" >{{ page }}</a>
+          {% endif %}
+      </li>
+      {% endfor %}
+
+      {% if paginator.next_page %}
+      <li>
+      <a href="{{ paginator.next_page_path }}" aria-label="next">
+          <span aria-hidden="true">&raquo;</span>
+      </a>
+      {% else %}
+      <li class="disabled">
+      <a href="{{ paginator.next_page_path }}" aria-label="next">
+          <span aria-hidden="true">&raquo;</span>
+      </a>
+      {% endif %}
+      </li>
   </ul>
 </div>
