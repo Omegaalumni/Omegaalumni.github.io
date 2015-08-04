@@ -2,6 +2,14 @@
 layout: default
 ---
 {% include jumbotron.html %}
-  <article>
+  <article itemscope itemtype="http://schema.org/Event">
   {{ content }}
+      <section>
+          <dl class="dl-horizontal">
+              <dt>Time:</dt><dd><time date="{{page.date}}" itemprop="startDate">{{page.date}}</time></dd>
+              <dt>Venue:</dt><dd><span itemprop="location">{{page.venue}}</span></dd>
+              <dt>Organizer:</dt><dd><span itemprop="organizer">{% if page.organizer %}{{page.organizer}}{%else%}{{site.org.name}}{%endif%}
+          </dl>
+          <a href="{{page.join}}" class="btn btn-default col-xs-3">Join</a>
+  </section>
   </article>

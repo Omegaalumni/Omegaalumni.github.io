@@ -12,7 +12,7 @@
         <div class="collapse navbar-collapse navbar-right" id="links">
             <ul class="nav navbar-nav">
                 <li><a href="{{ site.baseurl }}/">Home</a></li>
-                {% for page in site.pages %}
+                {% for page in site.links %}
                 {% if page.title %}<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>{% endif %}
                 {% endfor %}
                 <li class="divider" role="separator"></li>
@@ -21,6 +21,15 @@
                     <ul class="dropdown-menu">
                     {% for post in site.posts %}
                         {% if post.title %}<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>{% endif %}
+                    {% endfor %}
+                    </ul>
+                </li>
+                <li class="divider" role="separator"></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    {% for event in site.events %}
+                        {% if event.title %}<li><a href="{{ event.url | prepend: site.baseurl }}">{{ event.title }}</a></li>{% endif %}
                     {% endfor %}
                     </ul>
                 </li>
@@ -43,6 +52,7 @@
                         <path d="M184 213A140 140 0 0 0 44 73 V 38a175 175 0 0 1 175 175z" fill="#FFF"/>
                         </svg>
                 </a>
+
                 </li>
             </ul>
         </div>
