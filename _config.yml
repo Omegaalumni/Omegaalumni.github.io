@@ -2,8 +2,8 @@
 title: Omega Alumini Association
 
 description: "This site provides a basic information about Omega Alumini Association their aims and activities."
-baseurl: "/alumini"
-url: "http://alumini.omegacollege.edu.np"
+baseurl:
+url: "http://alumni.omegacollege.edu.np"
 
 org:
   twitter: frensOfAll
