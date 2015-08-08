@@ -1,12 +1,10 @@
 ---
-layouts: default
+layout: default
 ---
 <section id="">{% include jumbotron.html %}</section>
-{% for page in site.pages %}
+{% for page in site.links %}
 <article id="{{page.title}}">
-    <h1></h1>
-    <section>
-        {{page}}
-    </section>
+    <h1><a href="{{page.permalink}}">{{page.title}}</a></h1>
+    <section>{{page.content}}</section>
 </article>
 {% endfor %}
