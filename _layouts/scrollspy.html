@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
-    <body>
+    <body class="scrollspy-container" data-target="#navbar-spy" data-spy="scroll" >
+        {%assign layout="scrollspy"%}
     {% include header.html %}
-<section class="scrollspy-container" data-target="#navbar-spy" data-spy="scroll">
+<section class="container">
       {{ content }}
 </section>
 {% include footer.html %}

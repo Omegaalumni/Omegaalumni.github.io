@@ -14,7 +14,7 @@
                 {%if layout == 'scrollspy'%}
                 <li class="active"><a href="#home">Home</a></li>
                 {% for page in site.links %}
-                <li><a href="#{{ page.title }}">{{page.title}}</a></li>
+                <li><a href="#{{page.title | replace: ' ', '_'}}">{{page.title}}</a></li>
                 {% endfor %}
                 {%else%}
                 <li><a href="{{ site.base.url }}">Home</a></li>

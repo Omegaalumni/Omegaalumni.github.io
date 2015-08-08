@@ -3,6 +3,11 @@
     {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
     </h1>
     <p>
-        {% if page.title %}{{ page.description }}{% else %}{{ site.description }}{% endif %}
-    </p>
+        {% if page.title %}{{ page.description }}</p>{% else %}{{ site.description }}
+        </p>
+        <a class="btn btn-primary" href="/forms/membership"> Fill the form </a>
+        <a class="btn btn-primary" href="{{site.org.facebook.group}}"> Facebook Group </a>
+        <a class="btn btn-primary" href="{{site.org.facebook.page}}"> Facebook Page </a>
+        {% endif %}
+
 </div>

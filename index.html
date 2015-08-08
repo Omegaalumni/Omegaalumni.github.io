@@ -1,9 +1,9 @@
 ---
 layout: scrollspy
 ---
-<article id="#home">{% include jumbotron.html %}</article>
+<article id="home">{% include jumbotron.html %}</article>
 {% for page in site.links %}
-<article id="{{page.title}}">
+<article id="{{page.title | replace: ' ', '_'}}">
     <h1><a href="{{page.permalink}}">{{page.title}}</a></h1>
     <section>{{page.content}}</section>
 </article>

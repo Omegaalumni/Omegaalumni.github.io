@@ -11,9 +11,19 @@
     <link rel="stylesheet" href=/css/bootstrap.css>
     <!-- Custom CSS -->
     <link rel="stylesheet" href=/css/custom.css>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+          fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>
+
 </head>
 
-    <body>
+    <body class="scrollspy-container" data-target="#navbar-spy" data-spy="scroll" >
+        
     <header class="container-fluid">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navbar-spy">
     <div class="container-fluid">
@@ -29,32 +39,12 @@
         <div class="collapse navbar-collapse navbar-right" id="links">
             <ul class="nav navbar-nav">
                 
-                <li><a href="">Home</a></li>
+                <li class="active"><a href="#home">Home</a></li>
                 
-                        
-
-
-
-   
-      
-      	
-      	<li><a href="/about/">About</a></li>
-      	
-      
-  
-
-   
-      
-      	
-      	<li><a href="/members/">Executive Committe</a></li>
-      	
-      
-  
-
-
-
-
-
+                <li><a href="#About">About</a></li>
+                
+                <li><a href="#Executive_Committe">Executive Committe</a></li>
+                
                 
                 <li class="divider" role="separator"></li>
                 <li class="dropdown">
@@ -114,14 +104,19 @@
 
 </header>
 
-<section class="scrollspy-container" data-target="#navbar-spy" data-spy="scroll">
-      <article id="#home"><div class="jumbotorn container">
+<section class="container">
+      <article id="home"><div class="jumbotorn container">
     <h1>
     Omega Alumini Association
     </h1>
     <p>
         This site provides a basic information about Omega Alumini Association their aims and activities.
-    </p>
+        </p>
+        <a class="btn btn-primary" href="/forms/membership"> Fill the form </a>
+        <a class="btn btn-primary" href="https://www.facebook.com/groups/alumniomega/"> Facebook Group </a>
+        <a class="btn btn-primary" href="https://www.facebook.com/OmegaAlumni"> Facebook Page </a>
+        
+
 </div>
 </article>
 
@@ -131,7 +126,7 @@
 </section>
 </article>
 
-<article id="Executive Committe">
+<article id="Executive_Committe">
     <h1><a href="/members/">Executive Committe</a></h1>
     <section><section class="container">
     <div class="row">
@@ -184,10 +179,13 @@
             <dt>Name</dt>
             <dd class="name">Omega Alumini Association</dd>
             <dt>Mail</dt>
-            <dd><a class="mail" href="mailto:admin@omegacollege.edu.np">admin@omegacollege.edu.np</a></dd>
+            <dd><a class="mail" href="mailto:alumni@omegacollege.edu.np">alumni@omegacollege.edu.np</a></dd>
             <dt>Address</dt>
             <dd>Kumaripati</dd>
+            <dt>Like this website or Share this website of facebook</dt><dd><div class="fb-like" data-href="http://alumni.omegecollege.edu.np" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+</dd>
         </dl>
+
     </section>
     <section class="col-md-2">
         <h1>links</h1>

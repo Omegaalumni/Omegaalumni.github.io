@@ -6,9 +6,10 @@ baseurl:
 url: "http://alumni.omegacollege.edu.np"
 
 org:
-  twitter: frensOfAll
   facebook:
-  email: admin@omegacollege.edu.np
+    group: https://www.facebook.com/groups/alumniomega/
+    page: https://www.facebook.com/OmegaAlumni
+  email: alumni@omegacollege.edu.np
   address:
     lat:
     long:
@@ -26,6 +27,9 @@ collections:
   links:
     output: true
     pemalink: /:path/
+  forms:
+    output: true
+    pemalink: /forms/:path/
 
 # Paginate
 paginate: 5
