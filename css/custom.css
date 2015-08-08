@@ -41,19 +41,14 @@ body{
   content: "\2709";
   margin-right:1em;
 }
-.scrollspy-container article
+.scrollspy-container article, article
 {
-  min-height: 20em;
+  background: #eee;
+  vertical-align: middle;
+  min-height: 10em;
   margin: 1em;
   padding: 2em;
 }
 .navbar-inverse{
   color: darkgray;
- 
-}
-.navbar-inverse h1,
-.navbar-inverse h2,
-.navbar-inverse h3
-{
-  text-align: center;
-}
+ }

@@ -1,6 +1,6 @@
-<footer class="footer navbar-default">
-    <section class="col-md-4">
-        <h2>Contacts</h2>
+<footer class="footer navbar navbar-inverse">
+    <section class="col-md-5">
+        <h1 class="text-center">Contacts</h1>
         <dl class="dl-horizontal">
             <dt>Name</dt>
             <dd class="name">{{site.title}}</dd>
@@ -10,7 +10,7 @@
             <dd>{{site.org.address.place}}</dd>
         </dl>
     </section>
-    <section class="col-md-4">
+    <section class="col-md-2">
         <h1>links</h1>
         {% assign links=site.data.link %}
         <ul class="list-unstyled">
@@ -19,9 +19,9 @@
          {%endfor%}
         </ul>
     </section>
-    <section class="col-md-4" itemscope="http://schema.org/Person">
+    <section class="col-md-5" itemscope="http://schema.org/Person">
         {% assign developer=site.data.developer %}
-        <h1>Developed By:</h1>
+        <h1 class="text-center">Developed By:</h1>
         <dl class="dl-horizontal">
             <dt>Name</dt>
             <dd><span class="name" itemprop="first">{{developer.name.first}} </span><span itemprop="familyName">{{developer.name.last}}</span></dd>
