@@ -1,17 +1,17 @@
 - name:
-    first: Shishir
-    middle: Aditya
-    last: Gautam
-  profile:
-  mail:
-  phone:
-  twitter:
-  facebook:
+    first: dummy
+    middle: dummy
+    last: Dummy
+  profile: dummy
+  mail: dummy
+  phone: 01111111
+  twitter: dummy
+  facebook: facebook
 - name:
-    first: Tara
+    first: dum
     middle:
-    last:
-  profile:
+    last: dum
+  profile: dumm
   mail:
   phone:
   twitter:

@@ -1,35 +1,37 @@
 ---
-layout: page
+layout: default
 title: Executive Committe
 permalink: /members/
 ---
 <section class="container">
+    <h1 class="row">{{page.title}}
+    </h1>
     <div class="row">
         {% for mem in site.data.member %}
         {% if mem.name %}
         <div class="thumbnail col-sm-4" itemtype="http://schema.org/person">
-            <img src="{{mem.profile}}" itemtype="profile">
+            <img src="{% if mem.profile %}{{mem.profile}}{%else%}/images/unknow.jpeg{%endif%}" itemtype="profile">
             <div class="caption">
                 <dl class="dl-horizontal">
                     <dt>Name
                     </dt>
-                    <dd><span itemprop="first">{{mem.name.first}}</span><span itemprop="middle">{{mem.name.middle}}</span><span itemprop="familyName">{{mem.name.last}}</span>
+                    <dd><span class="name" itemprop="first">{{mem.name.first}}</span> <span itemprop="middle">{{mem.name.middle}}</span> <span itemprop="familyName">{{mem.name.last}}</span>
                     </dd>
                     {% if mem.mail %}
                     <dt>Mail</dt>
-                    <dd><a href="mailto:{{mem.mail}}" itemprop="email">{{mem.mail}}</a></dd>
+                    <dd><a class="mail" href="mailto:{{mem.mail}}" itemprop="email">{{mem.mail}}</a></dd>
                     {% endif %}
                     {% if mem.phone %}
                     <dt>Phone</dt>
-                    <dd>{{mem.phone}}</dd>
+                    <dd class="phone">{{mem.phone}}</dd>
                     {% endif %}
                     {% if mem.twitter %}
                     <dt>twitter</dt>
-                    <dd><a href="https://twitter/{{mem.twitter}}">{{mem.twitter}}</a></dd>
+                    <dd><a class="twitter" href="https://twitter/{{mem.twitter}}">{{mem.twitter}}</a></dd>
                     {% endif %}
                     {% if mem.facebook %}
                     <dt>facebook</dt>
-                    <dd><a href="https://facebook.com/{{mem.facebook}}">{{mem.facebook}}</dd>
+                    <dd><a class="facebook" href="https://facebook.com/{{mem.facebook}}">{{mem.facebook}}</a></dd>
                     {% endif %}
             </div>
         </div>

@@ -17,7 +17,7 @@
                 <li><a href="#{{page.title | replace: ' ', '_'}}">{{page.title}}</a></li>
                 {% endfor %}
                 {%else%}
-                <li><a href="{{ site.base.url }}">Home</a></li>
+                <li><a href="/{{ base.url }}">Home</a></li>
                 {% assign pages_list = site.links %}
                         {% include JB/pages_list %}
                 {%endif%}
