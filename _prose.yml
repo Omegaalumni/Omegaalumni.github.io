@@ -4,4 +4,6 @@ prose:
   media:"images"
   metadata:
     _posts:
-      try:"trial"
+      - name: "layout"
+        field:
+          value: "post"
