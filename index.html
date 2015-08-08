@@ -1,20 +1,9 @@
----
-layout: default
----
-{% include jumbotron.html %}
-<section class="container">
-
-  <h1>Notices</h1>
-
-  <ul class="list-unstyled">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</section>
+<section id="">{% include jumbotron.html %}</section>
+{% for page in site.pages %}
+<article id="{{page.title}}">
+    <h1></h1>
+    <section>
+        {{page}}
+    </section>
+</article>
+{% endfor %}
