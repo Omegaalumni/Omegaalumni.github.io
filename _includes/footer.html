@@ -12,7 +12,7 @@
     </section>
     <section class="col-md-4">
         <h1>links</h1>
-        {% assign links=site.data.link %%}
+        {% assign links=site.data.link %}
         <ul class="list-unstyled">
             {% for link in links %}
             <li><a class="website" href="{{link.url}}">{{link.name}}</a></li>
