@@ -1,11 +1,9 @@
 ---
-layout: default
+layout: page
 title: Executive Committe
 permalink: /members/
 ---
-<section class="container">
-    <h1 class="row">{{page.title}}
-    </h1>
+<article class="container">
     <div class="row">
         {% for mem in site.data.member %}
         {% if mem.name %}
@@ -23,7 +21,7 @@ permalink: /members/
                     {% endif %}
                     {% if mem.phone %}
                     <dt>Phone</dt>
-                    <dd class="phone">{{mem.phone}}</dd>
+                    <dd><span class="phone">{{mem.phone}}</span></dd>
                     {% endif %}
                     {% if mem.twitter %}
                     <dt>twitter</dt>
@@ -38,4 +36,4 @@ permalink: /members/
         {% endif %}
         {% endfor %}
     </div>
-</section>
+</article>
