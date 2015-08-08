@@ -33,7 +33,7 @@ collections:
 
 # Paginate
 paginate: 5
-paginate_path: 'Notice/page:num/'
+paginate_path: 'NewsNotices/page:num/'
 
 # Prose
 prose:

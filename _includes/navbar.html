@@ -23,9 +23,19 @@
                 {%endif%}
                 <li class="divider" role="separator"></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Notices <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                     {% assign pages_list = site.posts %}
+                        {% assign group='News' %}
+                        {% include JB/pages_list %}
+                    </ul>
+                </li>
+                <li class="divider" role="separator"></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Notices<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        {% assign pages_list = site.posts %}
+                        {% assign group='Notices' %}
                         {% include JB/pages_list %}
                     </ul>
                 </li>
@@ -39,7 +49,7 @@
                 </li>
                 <li class="divider" role="separator"></li>
                 <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">
-                    <object class="icon" type="text/svg" data="/images/feed.svg"></object>
+                    <i class="feed" type="text/svg" data="/images/feed.svg"></i>
                     </a>
                 </li>
             </ul>
