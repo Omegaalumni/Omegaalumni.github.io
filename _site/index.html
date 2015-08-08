@@ -13,9 +13,9 @@
     <link rel="stylesheet" href=/css/custom.css>
 </head>
 
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <body>
     <header class="container-fluid">
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navbar-spy">
     <div class="container-fluid">
         <div class="navbar-header">
             <img alt="Omega Alumini Association" src="">
@@ -28,11 +28,11 @@
         </button>
         <div class="collapse navbar-collapse navbar-right" id="links">
             <ul class="nav navbar-nav">
-                <li><a href="/">Home</a></li>
+                <li class="active"><a href="/">Home</a></li>
                 
-                <li><a href="/#About">About</a></li>
+                <li><a href="#About">About</a></li>
                 
-                <li><a href="/#Executive Committe">Executive Committe</a></li>
+                <li><a href="#Executive Committe">Executive Committe</a></li>
                 
                 <li class="divider" role="separator"></li>
                 <li class="dropdown">
@@ -93,6 +93,7 @@
 </header>
 
     <section class="container">
+      <section class="scrollspy-container" data-target="#navbar-spy" data-spy="scroll">
       <section id=""><div class="jumbotorn container">
     <h1>
     Omega Alumini Association
@@ -153,6 +154,8 @@
 </section>
 </article>
 
+
+</section>
 
     </section>
     <footer class="footer navbar-default">

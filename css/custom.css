@@ -1,5 +1,6 @@
 body{
-  padding-top: 70px;
+  position:relative;
+  top:40px;
 }
 .github:before {
   content:"";
@@ -39,4 +40,20 @@ body{
   font-family: 'Glyphicons Halflings';
   content: "\2709";
   margin-right:1em;
+}
+.scrollspy-container article
+{
+  min-height: 20em;
+  margin: 1em;
+  padding: 2em;
+}
+.navbar-inverse{
+  color: darkgray;
+ 
+}
+.navbar-inverse h1,
+.navbar-inverse h2,
+.navbar-inverse h3
+{
+  text-align: center;
 }
