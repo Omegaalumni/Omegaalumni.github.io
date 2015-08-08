@@ -1,0 +1,42 @@
+body{
+  padding-top: 70px;
+}
+.github:before {
+  content:"";
+  display: block;
+  width:20px;
+  height:20px;
+  background-image:url("/images/github.svg");
+  float:left;
+  margin-right:1em;
+}
+
+.name:before {
+  font-family: 'Glyphicons Halflings';
+  content: "\e008";
+  margin-right:1em;
+}
+.website:before {
+  font-family: 'Glyphicons Halflings';
+  content: "\e144";
+  margin-right:1em;
+}
+.twitter:before {
+  content : "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image:url("/images/twitter.svg");
+  float:left;
+  margin-right: 1em;
+}
+.mail:before {
+  font-family: 'Glyphicons Halflings';
+  content: "\2709";
+  margin-right:1em;
+}
+.phone:before {
+  font-family: 'Glyphicons Halflings';
+  content: "\2709";
+  margin-right:1em;
+}
