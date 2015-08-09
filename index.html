@@ -3,8 +3,8 @@ layout: scrollspy
 ---
 <article id="home">{% include jumbotron.html %}</article>
 {% for page in site.links %}
-<article id="{{page.title | replace: ' ', '_'}}">
-    <h1><a href="{{page.permalink}}">{{page.title}}</a></h1>
-    <section>{{page.content}}</section>
+<article id="{{page.title | replace: ' ', '_'}}" class="panel panel-default">
+    <header class="panel-heading"><h1><a href="{{page.permalink}}">{{page.title}}</a></h1></header>
+    <section class="panel-body">{{page.content}}</section>
 </article>
 {% endfor %}

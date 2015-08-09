@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-{% include jumbotron.html %}
-
-<article>
+<article class="panel panel-default">
+    <header class="panel-heading">
+    {% include jumbotron.html %}
     <time datetime="{{ page.date | date: "%b %-d, %Y" }}">{{ page.date | date: "%b %-d, %Y" }}</time>
     <p class="author">
         {% if page.author %} • {{ page.author }}{% endif %}
@@ -11,5 +11,8 @@ layout: default
     <p class="meta">
         {% if page.meta %} • {{ page.meta }}{% endif %}
     </p>
-    {{ content }}
+    </header>
+    <section class="panel-body">
+        {{ content }}
+    </section>
 </article>
