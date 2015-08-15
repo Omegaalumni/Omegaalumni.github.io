@@ -37,7 +37,6 @@ paginate_path: 'NewsNotices/page:num/'
 
 # Prose
 prose:
-  rooturl: ['_post','_data','_events']
   siteurl: "https://alumni.omegacollege.edu.np"
   media: "images"
   metadata:
