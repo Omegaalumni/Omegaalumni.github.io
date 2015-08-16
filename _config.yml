@@ -43,4 +43,5 @@ prose:
     _posts:
       - name: "layout"
         field:
+          element: "text"
           value: "post"
