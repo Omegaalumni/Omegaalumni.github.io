@@ -66,7 +66,8 @@ body{
 }
 .scrollspy-container article, article
 {
-  min-height: 100em;
+  min-height: 10em;
+  font-size: x-large;
 }
 .navbar-inverse{
   color: darkgray;
