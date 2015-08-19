@@ -1,11 +1,15 @@
 ---
 layout: default
 ---
-{% include jumbotron.html %}
-<article>
-  {{ content }}
-    <section>
-        <time>{{page.time}}</time>
-        <div>Venue</div><div>{{page.venue}}</div>
+
+<article class="panel panel-default">
+    <div class="panel-heading">
+        {% include jumbotron.html %}
+    </div>
+    <div class="panel-body">
+        {{ content }}
+    </div>
+    <section class="panel-footer">
+        <time datetime="{{page.time}}">{{page.time}}</time>
     </section>
 </article>
