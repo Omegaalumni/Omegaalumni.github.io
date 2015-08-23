@@ -4,6 +4,7 @@ title: Omega Alumni Association
 description: "This site provides a basic information about Omega Alumini Association their aims and activities."
 baseurl:
 url: "http://alumni.omegacollege.edu.np"
+brandimage: /images/logo.jpg
 
 org:
   facebook:
